@@ -1,6 +1,8 @@
+MaterialCommunityIcon.loadFont();
 import { useEffect, useState } from 'react';
 import { StyleSheet, Text, View, Pressable, Image } from 'react-native';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import MaterialCommunityIcon from 'react-native-vector-icons/MaterialCommunityIcons';
+
 
 export default function Advice({ advice, adviceId, handleGetAdvice }: { advice: string, adviceId: string, handleGetAdvice: () => void }): JSX.Element {
     return (
@@ -13,7 +15,7 @@ export default function Advice({ advice, adviceId, handleGetAdvice }: { advice: 
                 console.log('handlePress');
                 handleGetAdvice();
             }}>
-                <Icon name="lightbulb" size={24} color='black' />
+                <MaterialCommunityIcon name="dice-5" size={28} color='black' />
             </Pressable>
         </View >
     );
@@ -27,7 +29,7 @@ const styles = StyleSheet.create({
         lineHeight: 24,
         letterSpacing: 1,
         textAlign: 'center',
-        marginBottom: 20,
+        marginBottom: 40,
         marginTop: 20,
 
     },
@@ -41,15 +43,18 @@ const styles = StyleSheet.create({
         gap: 20,
         display: 'flex',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        position: 'relative'
     },
     icon: {
         backgroundColor: '#52ffa8',
-        paddingHorizontal: 4,
-        paddingVertical: 4,
+        paddingHorizontal: 12,
+        paddingVertical: 12,
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        borderRadius: 1000
+        borderRadius: 1000,
+        position: 'absolute',
+        bottom: '-25%'
     }
 })

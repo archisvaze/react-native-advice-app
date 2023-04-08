@@ -10,7 +10,8 @@ import {
   SafeAreaView,
   View,
   StyleSheet,
-  ActivityIndicator
+  ActivityIndicator,
+  Alert
 } from 'react-native';
 import Advice from './Advice';
 
@@ -30,7 +31,17 @@ function App(): JSX.Element {
           setAdviceId(data.slip.id)
           setAdvice(data.slip.advice)
           setThinking(false)
-        })
+        }).catch(error => {
+          setThinking(false)
+          console.error(error);
+          Alert.alert('Error', error.message, [
+            {
+              text: 'Cancel',
+              style: 'cancel'
+            },
+            { text: 'OK' }
+          ]);
+        });
     }, 3000)
   }
 
