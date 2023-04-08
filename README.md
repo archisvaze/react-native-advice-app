@@ -2,4 +2,5 @@
 
 Design taken from [FrontendMentor](https://www.frontendmentor.io/)  
 
-<img src="https://user-images.githubusercontent.com/92965519/230709621-02eb185c-dbcb-4e17-a117-e8ea9806d50e.png)" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="100" />
+![Simulator Screenshot - iPhone XR - 2023-04-08 at 13 03 14](https://user-images.githubusercontent.com/92965519/230709814-e9770c86-b448-4d8b-96c1-3ca528004da3.png =500x300)
+
